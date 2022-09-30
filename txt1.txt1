@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (void)
+{
+    int i, numero;
+    srand ((unsigned) time (NULL));
+    for (i=1; i<=5; i++)
+    {
+        printf ("PROCESO %d\n", i);
+        numero=rand()%65536-32768;
+        printf ("Valor de numero: %d\n", numero);
+        putchar ('\n');
+    }
+    return EXIT_SUCCESS;
+}
