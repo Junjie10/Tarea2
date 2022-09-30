@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (void)
+{
+    float fx, x;
+    printf ("Ingresa el valor de x: ");
+    scanf ("%f", &x);
+    (void) getchar ();
+    fx=0;
+    if(x>=0)
+        fx=2.0*x*x*x+3.0*x*x+sqrt(5.0*x);
+    else
+        printf ("Error: ra\241z de n\243mero negativo.\n");
+    printf ("Valor de fx: %g\n", fx);
+    putchar ('\n');
+    system ("pause");
+    return EXIT_SUCCESS;
+}
