@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (void)
+{
+    int i, numero_al_azar;
+    srand ((unsigned) time (NULL));
+    for (i=1; i<=10; i++)
+    {
+        printf ("PROCESO %d\n", i);
+        numero_al_azar=rand()%1000;
+        printf ("Valor de numero al azar: %d\n", numero_al_azar);
+        putchar ('\n');
+    }
+    return EXIT_SUCCESS;
+}
